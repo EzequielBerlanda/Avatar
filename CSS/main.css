@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    background-image: url(../multimedia/fondohome.png);
+    background-repeat: no-repeat;
+    height: 749px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header nav {
+background-color:#103D52;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 15px;
+    align-items: center;
+    position: fixed;
+    gap: 840px;
+width: 100%;
+}
+header nav ul a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+    justify-content: end;
+}
+header nav ul a:hover{
+    border-bottom: solid 2px #000000;
+}
+header img{
+    width: 50px;
+    height: auto;
+}
+.TituloH{
+    width: 720px;
+    padding-left: 89px;
+    padding-top: 142px;
+}
+.TituloH h1{
+    font-weight: 400;
+    font-size: 150px;
+    color: #0F172A;
+}
+.TituloH h2{
+    font-size: 150px;
+    color: #0F172A;
+}
+.SubtituloH{
+    width: 1331px;
+    height: 35px;
+    padding-left: 89px;
+}
+.SubtituloH p{
+    font-size: 40px;
+}
+.MundoAvatar{
+    height: 905px;
+    background-image: url(../multimedia/fondoMA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.TituloMA{
+    display: flex;
+    justify-content: center;
+    padding-top: 91px;
+}
+.TituloMA h3{
+     display: flex;
+     font-size: 66px;
+     align-items: center;
+}
+.Tarjetas{
+    height: 736px;
+    display: flex;
+    flex-direction: row;
+    gap: 109px;
+    justify-content: center;
+    align-items: center;
+}
+.Tarjeta{
+    width: 338px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Tarjeta:hover{
+    background-color: #10123E ;
+    color: #FFFFFF;
+}
+.Tarjeta .Precio p:hover{
+    color: #3FABDE;
+}
+.Tarjeta .Plan:hover{
+    color: #FFFFFF;
+}
+.Tarjeta a{
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #8a80ff;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 60px;
+    color: #000000;
+    border: none;
+    text-decoration: none;
+}
+.Tarjeta a{
+    cursor: pointer;
+}
+.TituloTarjeta{
+    padding-top: 30px;
+}
+.TituloTarjeta p{
+    font-size: 30px;
+}
+.Precio{
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 400;
+font-size: 70px;
+line-height: 104px;
+color: #103D52;
+}
+.Precio .mes{
+    align-self: end;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 80px;
+    color: #103D52;
+}
+.Plan{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+    color: #000000;
+    text-align: start;
+    align-self: center;
+}
+.Noticias{
+    height: 689px;
+    background: linear-gradient(to bottom, #7AC5E8 0%, #FFFFFF 100%);
+    /*filter: blur(4px);*/
+    
+}
+.linea{
+    width: 10px;
+    height: 100px;
+    background-color: #000000;
+}
+.Noticia{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding-left: 52px;
+}
+.Noticia h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+.NoticiaDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.NewsLetter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.NewsLetter h3{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 74px;
+}
+.NewsLetter p{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+.BotonNewsletter{
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    background-color: #fff;
+}
+.BotonNewsletter input{
+    border: none;
+    padding: 10px 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.BotonNewsletter button{
+    border: none;
+    padding: 10px 45px;
+    border-radius: 50px;
+    background-color: #103D52;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    border: 3px solid #103D52;
+}
+.BotonNewsletter button:hover{
+    background-color: #FFFFFF;
+    color: #103D52;
+    border: 3px solid #103D52;
+    font-weight: 400;
+}
+.VIP{
+    animation-name: mover;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1000, end);
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+}
+@keyframes mover {
+    0% {transform: rotate3d(0, 0, 0, 192deg);}
+    20%{transform: rotate3d(0, 2, 0, 192deg);}
+    40%{transform: rotate3d(0, 4, 0, 192deg);}
+    60%{transform: rotate3d(0, 6, 0, 192deg);}
+    80%{transform: rotate3d(0, 8, 0, 192deg);}
+    100%{transform: rotate3d(0, 10, 0, 192deg);}
+}
+/*.VIP:hover{
+    display: inline-block;
+    animation: bounce; 
+    animation-duration: 2s; 
+}*/
+.Fotos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.Plataformas{
+    background-image: url(../multimedia/FondoPlataformas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.yadisponible h3{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+}
+.yadisponible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+
+}
+.plat{
+    background-color: #015099;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.plat img{
+    width: 85px;
+    height: 85px;
+}
+.derechos{
+    background-color: #7FC7E9;
+    height: 173px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.derechos p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+/* ESTILOS CONTACTO*/
+
+
+
+.TituloHC{
+    width: 720px;
+    padding-left: 89px;
+    padding-top: 141PX;
+}
+.TituloHC h1{
+    font-weight: 400;
+    font-size: 150px;
+    color: #0F172A;
+}
+.TituloHC h2{
+    font-size: 150px;
+    color: #0F172A;
+}
+.SubtituloHC{
+    width: 1331px;
+    height: 35px;
+    padding-left: 89px;
+}
+.SubtituloHC p{
+    font-size: 40px;
+}
+.FormularioC{
+    height: 800px;
+    background: linear-gradient(358.54deg, rgba(255, 255, 255, 0) 1.57%, #0F172A 99.1%);
+}
+.NombreEmail{
+    display: flex;
+    flex-direction: row;
+    gap: 103px;
+    justify-content: center;
+    padding-top: 203px;
+}
+.NombreEmail input{
+    padding: 18px 18px;
+    padding-right: 130px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 11px 11px 28px rgba(0, 0, 0, 0.30);
+}
+.mensaje{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.mensaje textarea{
+    box-shadow: 11px 11px 28px rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+}
+.botonC{
+    display: flex;
+    justify-content: end;
+    padding-right: 615px;
+    padding-top: 50px;
+}
+.botonC button{
+    border: none;
+    padding: 10px 45px;
+    border-radius: 50px;
+    background-color: #103D52;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    border: 3px solid #103D52;
+}
+.botonC button:hover{
+    background-color: #FFFFFF;
+    color: #103D52;
+    border: 3px solid #103D52;
+    font-weight: 400;
+}
+
+
+
+/* ESTILOS NOSOTROS */
+
+
+
+.TituloHN{
+    width: 720px;
+    padding-left: 89px;
+    padding-top: 141PX;
+}
+.TituloHN h1{
+    font-weight: 400;
+    font-size: 150px;
+    color: #0F172A;
+}
+.TituloHN h2{
+    font-size: 150px;
+    color: #0F172A;
+}
+.SubtituloHN{
+    width: 1331px;
+    height: 35px;
+    padding-left: 89px;
+}
+.SubtituloHN p{
+    font-size: 40px;
+}
+.Opiniones{
+    height: 905px;
+    background: linear-gradient(358.54deg, #b6d8e9 1.57%, #103D52 99.1%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetaOpinion{
+    background-color: #fff;
+    width: 628px;
+    height: 409px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.textorespaldo{
+    width: 628px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.textorespaldo h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+.textorespaldo p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.textorespaldo .Tittle{
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    text-align: start;
+    padding-left: 150px;
+}
+.textoOpinion{
+    width: 200px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 63px;
+    align-items: center;
+    gap: 20px;
+}
+.textoOpinion p{
+    width: 162px;
+    height: 96px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nombreOpinion{
+    display: flex;
+    text-align: end;
+    height: 40px;
+}
+.nombreOpinion p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.botonOpinion{
+    display: flex;
+    padding-top: 650px;
+}
+.botonOpinion button{
+    border: none;
+    padding: 10px 45px;
+    border-radius: 50px;
+    background-color: #103D52;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    border: 3px solid #103D52;
+}
+.botonOpinion button:hover{
+    background-color: #FFFFFF;
+    color: #103D52;
+    border: 3px solid #103D52;
+    font-weight: 400;
+}
+.tarjetaOpinionNone{
+    background-color: #fff;
+    width: 628px;
+    height: 409px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetaOpinionNone{
+    display: none;
+}
